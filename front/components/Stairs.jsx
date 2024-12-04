@@ -1,7 +1,5 @@
 import { motion } from "framer-motion"
 
-
-
 const stairAnimation = {
     initial: {
         top: "0%",
@@ -14,13 +12,33 @@ const stairAnimation = {
     },
 };
 
-
+const reverseIndex = (index) => {
+    const totalSteps = 6;
+    return totalSteps - index - 1;
+}
 
 const Stairs = () => {
-    return <>
-     {/* nos quedamos en el minuto 34:03*/}
+    return (
+    <>
+   {[...Array(6)].map((_, index)=> {
+    return(
+   <motion.div
+     key={index + 1}
+     variants={stairAnimation}
+     initial="initial"
+     animate="animate"
+     exit="exit"
+     transition={{
+        duration: 0.4,
+        ease: "easeInOut",
+        delay: reverseIndex(index) * 0.1,
+     }}
+     className="h-full w-full bg-white relative"
+     />
+    );
+   })}
     </> 
-    
+    );
 };
 
 export default Stairs;
