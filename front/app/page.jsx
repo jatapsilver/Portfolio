@@ -4,12 +4,13 @@ import { FiDownload } from "react-icons/fi"
 //components
 import Social from "@/components/ui/Socials";
 import Photo from "@/components/ui/Photo";
+import Stats from "@/components/ui/Stats";
 
 const Home = () => {
   return <section className="h-full">
     <div className="container mx-auto h-full">
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-        <div className="text-center xl:text-left">
+        <div className="text-center xl:text-left order-2 xl:order-none">
           <span className="text-xl">Desarrollador FullStack</span>
           <h1 className="h1 mb-6">
             Hola Soy<br/> <span className="text-accent">Javier Plata</span>
@@ -27,11 +28,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div>
-          <Photo />
+        <div className="order-1 xl:order-none mb-8 xl:mb-0">
+          <Photo  />
         </div>
       </div>
     </div>
+    <Stats />
   </section>
 }
 
