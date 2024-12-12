@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi"
 
@@ -7,6 +9,14 @@ import Photo from "@/components/ui/Photo";
 import Stats from "@/components/ui/Stats";
 
 const Home = () => {
+
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/assets/CV/CV.pdf"
+    link.download = "Javier-Plata-CV.pdf"
+    link.click();
+  }
+
   return <section className="h-full">
     <div className="container mx-auto h-full">
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
@@ -19,7 +29,12 @@ const Home = () => {
           Soy un desarrollador full stack con experiencia en frontend y backend, enfocado en entregar soluciones eficientes y escalables.
           </p>
           <div className="flex flex-col xl:flex-row items-center gap-8">
-            <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+            <Button 
+            variant="outline" 
+            size="lg" 
+            className="uppercase flex items-center gap-2"
+            onClick={handleDownloadCV}
+            >
               <span>Descargar CV</span>
               <FiDownload className="text-xl"/>
             </Button>

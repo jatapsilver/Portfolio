@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/ui/tooltip.jsx", "app/page.jsx", "components/ui/Socials.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/ui/tooltip.tsx", "app/page.jsx", "components/ui/Socials.jsx"],
   "exclude": ["node_modules"]
 }

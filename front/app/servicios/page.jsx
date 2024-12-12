@@ -7,25 +7,25 @@ const services = [
     {
         num: "01",
         title: "Desarrollador Fullstack",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit non metus consectetur congue.",
+        description: "Transformo ideas en soluciones digitales que inspiran, con tecnología y diseño a la vanguardia, desarrollando proyectos que marcan la diferencia.",
         href: ""
     },
     {
         num: "02",
         title: "Desarrollador web3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit non metus consectetur congue.",
+        description: "Desarrollo soluciones Web3 innovadoras, integrando blockchain para crear experiencias digitales más seguras, transparentes y accesibles.",
         href: ""
     },
     {
         num: "03",
         title: "Educador Blockchain",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit non metus consectetur congue.",
+        description: "Enseño cómo la blockchain está redefiniendo el panorama digital, ofreciendo formación práctica para quienes desean sumergirse en el mundo de las criptomonedas y la descentralización.",
         href: ""
     },
     {
         num: "04",
         title: "Desarrollador Solidity",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit non metus consectetur congue.",
+        description: "Construyo aplicaciones descentralizadas con Solidity, enfocándome en crear contratos inteligentes innovadores y de alto rendimiento que optimicen la interacción con la blockchain.",
         href: ""
     }
 ]
@@ -49,13 +49,13 @@ const Servicios = () => {
                     return (
                     <div key={index} className="flex-1 flex flex-col justify-center gap-6 group">
                         <div className="w-full flex justify-between items-center">
-                            <div className="text-5xl font-extrabold">{services.num}</div>
-                            <Link href={services.href}>
-                                <BsArrowDownRight />
+                            <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all-duration-500">{services.num}</div>
+                            <Link href={services.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
+                                <BsArrowDownRight className="text-primary text-3xl" />
                             </Link>
                         </div>
-                        <h2>{services.title}</h2>
-                        <p>{services.description}</p>
+                        <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">{services.title}</h2>
+                        <p className="text-white/60">{services.description}</p>
                         <div className="border-b border-white/20 w-full"></div>
                     </div>
                     );
