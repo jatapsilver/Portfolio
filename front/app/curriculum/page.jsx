@@ -5,10 +5,21 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
+  FaDocker,
   FaNodeJs,
+  FaGitAlt,
+  FaGithub,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiSolidity,
+  SiNpm,
+  SiPostgresql,
+  SiNestjs,
+  SiTypescript,
+  SiMongodb,
+} from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -21,20 +32,35 @@ import { motion } from "framer-motion";
 
 const about = {
   title: "Acerca de mí",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit non metus consectetur congue.",
+  description: "",
   info: [
     {
-      fieldName: "Name",
+      fieldName: "Nombre",
       fieldValue: "Javier Plata",
     },
     {
-      fieldName: "Phone",
+      fieldName: "Telefono",
       fieldValue: "(+57) 300 783 77 58",
     },
     {
-      fieldName: "Experience",
+      fieldName: "Experiencia",
       fieldValue: "3 Años",
+    },
+    {
+      fieldName: "Discord",
+      fieldValue: "jatapsilver",
+    },
+    {
+      fieldName: "Nacionalidad",
+      fieldValue: "Colombiano",
+    },
+    {
+      fieldName: "Email",
+      fieldValue: "jatapsilver92@hotmail.com",
+    },
+    {
+      fieldName: "Freelance",
+      fieldValue: "Disponible",
     },
   ],
 };
@@ -77,35 +103,77 @@ const education = {
   icon: "ruta",
   title: "Educación",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit non metus consectetur congue.",
+    "Estoy en continuo estudio para mejorar mis habilidades en blockchain y contratos inteligentes, con un enfoque en la innovación y el dominio de tecnologías disruptivas que impulsan el futuro digital.",
   items: [
     {
-      institution: "Universidad XYZ",
-      degree: "Ingeniería en Informática",
-      duration: "Febrero 2022 - Actualidad",
+      institution: "Henry",
+      degree: "Desarrollador Web FullStack",
+      duration: "Noviembre 2024",
+    },
+    {
+      institution: "Henry",
+      degree: "Teaching Assitant",
+      duration: "Noviembre 2024",
+    },
+    {
+      institution: "Avalanche",
+      degree: "GameAvax",
+      duration: "Septiembre 2024",
+    },
+    {
+      institution: "Henry",
+      degree: "Introduccion a ciberseguridad",
+      duration: "Agosto 2024",
+    },
+    {
+      institution: "freeCodeCamp",
+      degree: "Legacy javascript algorithms",
+      duration: "Julio 2024",
+    },
+    {
+      institution: "freeCodeCamp",
+      degree: "Responsive web desing",
+      duration: "Junio 2024",
+    },
+    {
+      institution: "Udemy",
+      degree: "Php desde cero",
+      duration: "marzo 2023",
     },
   ],
 };
 
 const skills = {
   title: "Habilidades",
-  description: "lore description",
+  description: "",
   skillList: [
     {
-      name: "HTML5",
+      name: "html5",
       icon: <FaHtml5 />,
     },
     {
-      name: "CSS3",
+      name: "css3",
       icon: <FaCss3 />,
     },
     {
-      name: "JavaScript",
+      name: "javascript",
       icon: <FaJs />,
+    },
+    {
+      name: "Node.js",
+      icon: <FaNodeJs />,
+    },
+    {
+      name: "npm",
+      icon: <SiNpm />,
     },
     {
       name: "ReactJS",
       icon: <FaReact />,
+    },
+    {
+      name: "Typescript",
+      icon: <SiTypescript />,
     },
     {
       name: "Tailwind CSS",
@@ -116,12 +184,32 @@ const skills = {
       icon: <SiNextdotjs />,
     },
     {
-      name: "Node.js",
-      icon: <FaNodeJs />,
+      name: "Nest.js",
+      icon: <SiNestjs />,
     },
     {
-      name: "Figma",
-      icon: <FaFigma />,
+      name: "solidity",
+      icon: <SiSolidity />,
+    },
+    {
+      name: "git",
+      icon: <FaGitAlt />,
+    },
+    {
+      name: "github",
+      icon: <FaGithub />,
+    },
+    {
+      name: "docker",
+      icon: <FaDocker />,
+    },
+    {
+      name: "postgresql",
+      icon: <SiPostgresql />,
+    },
+    {
+      name: "mongodb",
+      icon: <SiMongodb />,
     },
   ],
 };
