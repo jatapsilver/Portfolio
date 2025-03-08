@@ -40,36 +40,29 @@ const projects = [
   },
   {
     num: "03",
-    category: "backend",
-    title: "API de comidas",
+    category: "fullstack",
+    title: "Agro D Export",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed delectus hic magnam, autem doloremque necessitatibus? Deserunt nostrum totam, consectetur eveniet, harum dolor molestiae, accusamus quibusdam eos quisquam beatae autem.",
-    stack: [{ name: "javascript" }, { name: "nodejs" }, { name: "express" }],
-    image: "/assets/proyectos/casawldcolombia.png",
+      "La plataforma AgroDExports tiene como objetivo maximizar las exportaciones desde América Latina hacia Europa y Estados Unidos, mejorando la calidad del consumo a través de grandes empresas como Albert Heijn, Jumbo, Walmart, Costco, Kroger, Aldi, Lidl, Tesco, Carrefour, Auchan, E.Leclerc y Sainsbury’s",
+    stack: [{ name: "NestJs" }, { name: "NextJs" }, { name: "Prisma" }],
+    image: "/assets/proyectos/agroDExport.jpeg",
     live: "",
-    github: "",
+    github: "https://github.com/jatapsilver",
   },
   {
     num: "04",
-    category: "frontend",
-    title: "App de tareas",
+    category: "Gaming",
+    title: "PharmaQuest",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed delectus hic magnam, autem doloremque necessitatibus? Deserunt nostrum totam, consectetur eveniet, harum dolor molestiae, accusamus quibusdam eos quisquam beatae autem.",
-    stack: [{ name: "html 5" }, { name: "Css 3" }, { name: "javascript" }],
-    image: "/assets/proyectos/casawldcolombia.png",
+      "PharmaQuest es un juego educativo diseñado principalmente para estudiantes de medicina, que les permite profundizar en el uso de diferentes medicamentos para el tratamiento de diversos síntomas y condiciones médicas.",
+    stack: [
+      { name: "Blockchain" },
+      { name: "Solidity" },
+      { name: "javascript" },
+    ],
+    image: "/assets/proyectos/pharmaquest.jpeg",
     live: "",
-    github: "",
-  },
-  {
-    num: "05",
-    category: "backend",
-    title: "API de tareas",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed delectus hic magnam, autem doloremque necessitatibus? Deserunt nostrum totam, consectetur eveniet, harum dolor molestiae, accusamus quibusdam eos quisquam beatae autem.",
-    stack: [{ name: "javascript" }, { name: "nodejs" }, { name: "express" }],
-    image: "/assets/proyectos/casawldcolombia.png",
-    live: "",
-    github: "",
+    github: "https://github.com/jatapsilver",
   },
 ];
 
