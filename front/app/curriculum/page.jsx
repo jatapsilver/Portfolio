@@ -40,7 +40,7 @@ const about = {
     },
     {
       fieldName: "Telefono",
-      fieldValue: "(+57) 300 783 77 58",
+      fieldValue: "(+57) 300 783 7758",
     },
     {
       fieldName: "Experiencia",

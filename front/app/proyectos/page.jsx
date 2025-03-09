@@ -64,6 +64,17 @@ const projects = [
     live: "",
     github: "https://github.com/jatapsilver",
   },
+  {
+    num: "05",
+    category: "Backend",
+    title: "E-commerce",
+    description:
+      "E-commerce es una aplicación de comercio electrónico que permite a los usuarios comprar y vender productos en línea. Este proyecto se desarrolló con un enfoque en funcionalidades del backend asegurando la seguridad de la aplicacion y la integridad de los datos.",
+    stack: [{ name: "NestJs" }, { name: "Postgres" }, { name: "Swagger" }],
+    image: "/assets/proyectos/e-commerce.jpg",
+    live: "",
+    github: "https://github.com/jatapsilver",
+  },
 ];
 
 const Proyectos = () => {
