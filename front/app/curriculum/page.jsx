@@ -73,6 +73,11 @@ const experience = {
   items: [
     {
       company: "Freelancer",
+      title: "Desarrollo web3",
+      duration: "Diciembre 2024 - Enero 2025",
+    },
+    {
+      company: "Freelancer",
       title: "Creación de Token y Gestión de Liquidez",
       duration: "Agosto 2024 - Octubre 2024",
     },

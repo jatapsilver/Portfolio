@@ -19,6 +19,22 @@ const projects = [
   {
     num: "01",
     category: "web3",
+    title: "Lucky9",
+    description:
+      "Lucky9 es una aplicación diseñada para gestionar de manera automática el acceso a un canal de Telegram mediante el uso de un contrato inteligente. Su objetivo principal es controlar el pago de suscripciones, el registro de ingreso y la permanencia de los usuarios dentro del canal, todo de forma descentralizada y segura.",
+    stack: [
+      { name: "NestJs" },
+      { name: "NextJs" },
+      { name: "Web3" },
+      { name: "Solidity" },
+    ],
+    image: "/assets/proyectos/lucky9.png",
+    live: "https://lucky9.com.co/",
+    github: "https://github.com/jatapsilver",
+  },
+  {
+    num: "02",
+    category: "web3",
     title: "Casa wld colombia",
     description:
       "Casa Wld Colombia es una innovadora plataforma diseñada para facilitar el intercambio de la criptomoneda Worldcoin de manera segura, eficiente y rápida. Este proyecto integra lo mejor de las tecnologías modernas para ofrecer a los usuarios una experiencia optimizada y confiable.",
@@ -28,7 +44,7 @@ const projects = [
     github: "https://github.com/jatapsilver",
   },
   {
-    num: "02",
+    num: "03",
     category: "frontend",
     title: "It Global Solutions",
     description:
@@ -39,7 +55,7 @@ const projects = [
     github: "https://github.com/jatapsilver",
   },
   {
-    num: "03",
+    num: "04",
     category: "fullstack",
     title: "Agro D Export",
     description:
@@ -50,7 +66,7 @@ const projects = [
     github: "https://github.com/jatapsilver",
   },
   {
-    num: "04",
+    num: "05",
     category: "Gaming",
     title: "PharmaQuest",
     description:
@@ -65,7 +81,7 @@ const projects = [
     github: "https://github.com/jatapsilver",
   },
   {
-    num: "05",
+    num: "06",
     category: "Backend",
     title: "E-commerce",
     description:
