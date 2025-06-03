@@ -111,6 +111,21 @@ const education = {
     "Estoy en continuo estudio para mejorar mis habilidades en blockchain y contratos inteligentes, con un enfoque en la innovación y el dominio de tecnologías disruptivas que impulsan el futuro digital.",
   items: [
     {
+      institution: "Eth Kipu",
+      degree: "Ethereum Developer - Estandares, Librerias y Patrones",
+      duration: "Mayo 2025",
+    },
+    {
+      institution: "Eth Kipu",
+      degree: "Ethereum Developer - Fundamentos de Solidity",
+      duration: "Mayo 2025",
+    },
+    {
+      institution: "Eth Kipu",
+      degree: "Ethereum Developer - Intro a smart contracts",
+      duration: "Abril 2025",
+    },
+    {
       institution: "Henry",
       degree: "Desarrollador Web FullStack",
       duration: "Noviembre 2024",
@@ -287,7 +302,7 @@ const Curriculum = () => {
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.degree}
                           </h3>
-                          <div className="flex items-center gap-3">
+                          <div className="flex items-center gap-3 mt-4">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.institution}</p>
                           </div>
