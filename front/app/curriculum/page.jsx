@@ -73,6 +73,11 @@ const experience = {
   items: [
     {
       company: "Freelancer",
+      title: "Implementación de Sistema de Pagos Web3",
+      duration: "Febrero 2025 - Junio 2025",
+    },
+    {
+      company: "Freelancer",
       title: "Desarrollo web3",
       duration: "Diciembre 2024 - Enero 2025",
     },
