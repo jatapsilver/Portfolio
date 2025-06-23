@@ -17,7 +17,23 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 
 const projects = [
   {
-    num: "01",
+    num: "07",
+    category: "fullstack",
+    title: "App de Registros",
+    description:
+      "La app de registros es una aplicación que utiliza NestJS para el backend y NextJS para el frontend. Aunque la interfaz es sencilla, el backend está altamente estructurado y cuenta con una amplia gama de endpoints que gestionan múltiples entidades con relaciones complejas.",
+    stack: [
+      { name: "NestJs" },
+      { name: "NextJs" },
+      { name: "Postgres" },
+      { name: "Swagger" },
+    ],
+    image: "/assets/proyectos/appDeRegistros.png",
+    live: "https://github.com/jatapsilver",
+    github: "https://github.com/jatapsilver",
+  },
+  {
+    num: "06",
     category: "web3",
     title: "Lucky9",
     description:
@@ -33,7 +49,7 @@ const projects = [
     github: "https://github.com/jatapsilver",
   },
   {
-    num: "02",
+    num: "05",
     category: "web3",
     title: "Casa wld colombia",
     description:
@@ -44,7 +60,7 @@ const projects = [
     github: "https://github.com/jatapsilver",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "It Global Solutions",
     description:
@@ -55,7 +71,7 @@ const projects = [
     github: "https://github.com/jatapsilver",
   },
   {
-    num: "04",
+    num: "03",
     category: "fullstack",
     title: "Agro D Export",
     description:
@@ -66,7 +82,7 @@ const projects = [
     github: "https://github.com/jatapsilver",
   },
   {
-    num: "05",
+    num: "02",
     category: "Gaming",
     title: "PharmaQuest",
     description:
@@ -81,7 +97,7 @@ const projects = [
     github: "https://github.com/jatapsilver",
   },
   {
-    num: "06",
+    num: "01",
     category: "Backend",
     title: "E-commerce",
     description:
@@ -168,15 +184,34 @@ const Proyectos = () => {
               {projects.map((project) => {
                 return (
                   <SwiperSlide key={project.num} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      {/*overlay*/}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                      {/*image*/}
-                      <div className="relative w-full h-full">
+                    <div
+                      className="
+      h-[460px] relative group flex justify-center items-center 
+      bg-gradient-to-br from-purple-300 via-pink-200 to-yellow-200 
+      overflow-hidden rounded-[32px]
+    "
+                    >
+                      {/* esquinas decorativas */}
+                      <div className="absolute top-4 left-4 w-12 h-12 bg-white opacity-30 rotate-45 rounded-sm"></div>
+                      <div className="absolute top-4 right-4 w-12 h-12 bg-white opacity-30 -rotate-45 rounded-sm"></div>
+                      <div className="absolute bottom-4 left-4 w-12 h-12 bg-white opacity-30 -rotate-45 rounded-sm"></div>
+                      <div className="absolute bottom-4 right-4 w-12 h-12 bg-white opacity-30 rotate-45 rounded-sm"></div>
+
+                      {/* overlay sutil al hover */}
+                      <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-20 transition-opacity"></div>
+
+                      {/* imagen con máscara y zoom */}
+                      <div
+                        className="
+        relative w-full h-full 
+        mask-[polygon(0_10%,100%0,100%90%,0_100%)] 
+        overflow-hidden shadow-2xl
+      "
+                      >
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
                           alt=""
                         />
                       </div>

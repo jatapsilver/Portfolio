@@ -73,8 +73,13 @@ const experience = {
   items: [
     {
       company: "Freelancer",
+      title: "App de Registros",
+      duration: "Junio 2025 - Junio 2025",
+    },
+    {
+      company: "Freelancer",
       title: "Implementación de Sistema de Pagos Web3",
-      duration: "Febrero 2025 - Junio 2025",
+      duration: "Febrero 2025 - Mayo 2025",
     },
     {
       company: "Freelancer",
@@ -115,6 +120,11 @@ const education = {
   description:
     "Estoy en continuo estudio para mejorar mis habilidades en blockchain y contratos inteligentes, con un enfoque en la innovación y el dominio de tecnologías disruptivas que impulsan el futuro digital.",
   items: [
+    {
+      institution: "Eth Kipu",
+      degree: "Ethereum Developer - ToolKit para desarrollo web3",
+      duration: "Mayo 2025",
+    },
     {
       institution: "Eth Kipu",
       degree: "Ethereum Developer - Estandares, Librerias y Patrones",
